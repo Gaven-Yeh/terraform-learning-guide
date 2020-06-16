@@ -81,11 +81,20 @@ Non-dependent resources will be built in parallel with other resources
 More info on [Hashicorp website](https://learn.hashicorp.com/terraform/getting-started/dependencies).
 
 ### 3.6 Provisioners
-
-https://learn.hashicorp.com/terraform/getting-started/provision
+Follow this [tutorial](https://learn.hashicorp.com/terraform/getting-started/provision).
 
 **Remember to do `terraform destroy` after you're done.**
 
 ### 3.7 Input and Output Variables
-https://learn.hashicorp.com/terraform/getting-started/variables
-https://learn.hashicorp.com/terraform/getting-started/outputs
+1. Follow this [tutorial](https://learn.hashicorp.com/terraform/getting-started/variables) to learn about 
+   - defining variables and 
+   - assigning variables.
+2. Follow this [tutorial](https://learn.hashicorp.com/terraform/getting-started/outputs) to learn about outputs
+
+**Remember to do `terraform destroy` after you're done.**
+
+## 4. Using Terraform as a Team
+### 4.1 Remote State
+
+
+More info [here](https://www.terraform.io/docs/backends/types/s3.html).
