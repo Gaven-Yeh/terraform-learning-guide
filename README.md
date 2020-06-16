@@ -1,26 +1,26 @@
 # terraform-learning-guide
 
 ## Contents
-1. Intro
-2. Installing Terraform
-3. How to use Terraform
-   1. Set up credentials
-   2. Create infrastructure
-   3. Change infrastructure
-   4. Destroy infrastructure
-   5. Resource Dependencies
-   6. Provisioners
-   7. Input and Output Variables
-4. Using Terraform as a Team
-   1. Remote State
-   2. State Locking
-5. Modules
-   1. Using pre-existing modules
-   2. Creating modules
-   3. Hosting modules
-6. Code organisation
-   1. Workspaces
-   2. File layout
+1. [Intro](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#1-intro)
+2. [Installing Terraform](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#2-installing-terraform-windows)
+3. [How to use Terraform](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#3-using-terraform)
+   1. [Set up credentials](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#31-set-up-credentials)
+   2. [Create infrastructure](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#32-create-infrastructure)
+   3. [Change infrastructure](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#33-change-infrastructure)
+   4. [Destroy infrastructure](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#34-destroy-infrastructure)
+   5. [Resource Dependencies](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#35-resource-dependencies)
+   6. [Provisioners](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#36-provisioners)
+   7. [Input and Output Variables](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#37-input-and-output-variables)
+4. [Using Terraform as a Team](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#4-using-terraform-as-a-team)
+   1. [Remote State](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#41-remote-state)
+   2. [State Locking]
+5. [Modules]
+   1. [Using pre-existing modules]
+   2. [Creating modules]
+   3. [Hosting modules]
+6. [Code organisation]
+   1. [Workspaces]
+   2. [File layout]
 
 ## 1. Intro
 Check out [Hashicorp's Terraform Intro](https://learn.hashicorp.com/terraform/getting-started/intro). (5-10 minutes)
@@ -94,7 +94,17 @@ Follow this [tutorial](https://learn.hashicorp.com/terraform/getting-started/pro
 **Remember to do `terraform destroy` after you're done.**
 
 ## 4. Using Terraform as a Team
-### 4.1 Remote State
-
+### 4.1 Remote state
 
 More info [here](https://www.terraform.io/docs/backends/types/s3.html).
+### 4.2 State locking
+
+## 5. Modules
+### 5.1 Using pre-existing modules
+### 5.2 Creating modules
+### 5.3 Hosting modules
+
+## 6. Code Organisation
+### 6.1 Workspaces
+### 6.2 File Layout
+
