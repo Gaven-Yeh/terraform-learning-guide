@@ -13,14 +13,14 @@
    7. [Input and Output Variables](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#37-input-and-output-variables)
 4. [Using Terraform as a Team](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#4-using-terraform-as-a-team)
    1. [Remote State](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#41-remote-state)
-   2. [State Locking]
-5. [Modules]
-   1. [Using pre-existing modules]
-   2. [Creating modules]
-   3. [Hosting modules]
-6. [Code organisation]
-   1. [Workspaces]
-   2. [File layout]
+   2. [State Locking](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#42-state-locking)
+5. [Modules](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#5-modules)
+   1. [Using pre-existing modules](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#51-using-pre-existing-modules)
+   2. [Creating modules](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#52-creating-modules)
+   3. [Hosting modules](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#53-hosting-modules)
+6. [Code organisation](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#6-code-organisation)
+   1. [Workspaces](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#61-workspaces)
+   2. [File layout](https://github.com/Gaven-Yeh/terraform-learning-guide/blob/master/README.md#62-file-layout)
 
 ## 1. Intro
 Check out [Hashicorp's Terraform Intro](https://learn.hashicorp.com/terraform/getting-started/intro). (5-10 minutes)
