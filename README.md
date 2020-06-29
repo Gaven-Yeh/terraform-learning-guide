@@ -144,6 +144,29 @@ You can publish public modules to terraform registry directly from a public GitH
 You need a Terraform Cloud account to have private modules. See [tutorial](https://learn.hashicorp.com/terraform/modules/private-modules).
 
 ## 6. Code Organisation
-### 6.1 Workspaces
-### 6.2 File Layout
+Follow this [code organisation/management tutorial](https://learn.hashicorp.com/terraform/modules/tf-code-management) to learn about
+- Workspaces, and
+- File Layout
 
+Remember to **avoid** using git branches. If you do use branches, remember to do `terraform destroy` before switching branches.
+
+### 6.1 Workspaces
+Workspaces are similar to git branches.
+
+Separate workspaces have separate `.tfstate` files
+
+Only suitable for testing small changes
+
+Prone to errors since you cannot see which workspace you're on (unlike git branches)
+
+Not suitable for multiple environments because all the state files for the different environments are in the same bucket. So there will be same authentication and access for all the environments
+
+Note that Terraform Cloud's workspaces are not exactly the same as the CLI workspaces.
+
+[Learn more](https://www.terraform.io/docs/state/workspaces.html).
+
+### 6.2 File Layout
+The "directories mentioned in the [tutorial above](https://learn.hashicorp.com/terraform/modules/tf-code-management) is the most basic version of a File Layout method. Learn more about how file layout is a more suitable way to organise Terraform for different environments with the following resources:
+- [Video: 5 common Terraform Patterns](https://www.hashicorp.com/resources/evolving-infrastructure-terraform-opencredo/)
+- Book: Terraform Up and Running by Yevgeniy Brikman - Chapter 3: How to Manage Terraform State
+- Terraform Layout - https://medium.com/hackernoon/terraform-layout-be3674dfe657
