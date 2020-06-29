@@ -95,9 +95,31 @@ Follow this [tutorial](https://learn.hashicorp.com/terraform/getting-started/pro
 
 ## 4. Using Terraform as a Team
 ### 4.1 Remote state
+The `.tfstate` files can be stored remotely so that everyone from a team uses the same state. This guide will use AWS S3 buckets.
+
+1. Create an S3 bucket and create a folder to store your terraform files. 
+2. Add this to your main.tf
+```
+terraform {
+  backend "s3" {
+    bucket = "<bucket name>"
+    key    = "path/to/my/key"
+    region = "ap-southeast-1"
+  }
+}
+```
+3. After doing `terraform apply` you should see a `.tfstate` file in the folder in the bucket you created.
 
 More info [here](https://www.terraform.io/docs/backends/types/s3.html).
+
 ### 4.2 State locking
+State locking can be used to prevent race conditions when multiple people are trying to change the state at the same time.
+
+To enable this:
+1. Create a table in DynamoDB.
+2. Set the `dynamodb_table` field in the terraform backend config to an existing DynammoDB table name.
+
+**Remember to do `terraform destroy` after you're done.**
 
 ## 5. Modules
 ### 5.1 Using pre-existing modules
