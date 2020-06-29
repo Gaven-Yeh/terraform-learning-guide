@@ -122,9 +122,26 @@ To enable this:
 **Remember to do `terraform destroy` after you're done.**
 
 ## 5. Modules
+Modules are a way to reuse configurations to avoid duplicate code. Read [this](https://learn.hashicorp.com/terraform/modules/modules-overview) for an intro. 
+
 ### 5.1 Using pre-existing modules
+Follow this [tutorial](https://learn.hashicorp.com/terraform/modules/using-modules) to learn about how to use modules from the Terraform Registry.
+
+Remember to **avoid** using git branches. If you do use branches, remember to do `terraform destroy` before switching branches.
+
 ### 5.2 Creating modules
+Follow this [tutorial](https://learn.hashicorp.com/terraform/modules/creating-modules) to learn how to create your own modules.
+
+Remember to **avoid** using git branches. If you do use branches, remember to do `terraform destroy` before switching branches.
+
 ### 5.3 Hosting modules
+You can host modules on the **public** Terraform Registry or a **private registry**.
+
+#### Terraform registry (public)
+You can publish public modules to terraform registry directly from a public GitHub repo. As long as your repo meets some requirements. (See [link](https://www.terraform.io/docs/registry/modules/publish.html))
+
+#### Private registry
+You need a Terraform Cloud account to have private modules. See [tutorial](https://learn.hashicorp.com/terraform/modules/private-modules).
 
 ## 6. Code Organisation
 ### 6.1 Workspaces
